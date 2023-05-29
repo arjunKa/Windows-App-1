@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Window
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:ConnectionId='1'
     x:Class="App1.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -11,8 +11,8 @@
 
     <Grid>
         <Grid.Resources>
-            <DataTemplate x:Key="ImageGridView_ItemTemplate" x:DataType="local:ImageFileInfo">
-                <Grid Height="300"
+            <DataTemplate x:Key="ImageGridView_ItemTemplate"                                 >
+                <Grid x:ConnectionId='3' Height="300"
           Width="300"
           Margin="8">
                     <Grid.RowDefinitions>
@@ -26,21 +26,21 @@
 
                     <StackPanel Orientation="Vertical"
                     Grid.Row="1">
-                        <TextBlock Text= "{x:Bind ImageTitle}"
+                        <TextBlock x:ConnectionId='5'                            
                        HorizontalAlignment="Center"
                        Style="{StaticResource SubtitleTextBlockStyle}" />
                         <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Center">
-                            <TextBlock Text="{x:Bind ImageFileType}"
+                            <TextBlock x:ConnectionId='7'                              
                            HorizontalAlignment="Center"
                            Style="{StaticResource CaptionTextBlockStyle}" />
-                            <TextBlock Text="{x:Bind ImageDimensions}"
+                            <TextBlock x:ConnectionId='8'                                
                            HorizontalAlignment="Center"
                            Style="{StaticResource CaptionTextBlockStyle}"
                            Margin="8,0,0,0" />
                         </StackPanel>
 
-                        <RatingControl Value="{x:Bind ImageRating}" IsReadOnly="True"/>
+                        <RatingControl x:ConnectionId='6'                              IsReadOnly="True"/>
                     </StackPanel>
                 </Grid>
             </DataTemplate>
@@ -55,14 +55,15 @@
                            HorizontalAlignment="Center"/>
             </ItemsPanelTemplate>
         </Grid.Resources>
-        <GridView x:Name="ImageGridView"
+        <GridView x:ConnectionId='9' x:Name="ImageGridView"
                 ItemTemplate="{StaticResource ImageGridView_ItemTemplate}"
                   ItemContainerStyle="{StaticResource ImageGridView_ItemContainerStyle}" Background="White"
                   ItemsPanel="{StaticResource ImageGridView_ItemsPanelTemplate}"
-                  ContainerContentChanging="ImageGridView_ContainerContentChanging"
-                  ItemsSource="{x:Bind Images}">
+                                                                                   
+                                               >
             
         </GridView>
     </Grid>
 
 </Window>
+
