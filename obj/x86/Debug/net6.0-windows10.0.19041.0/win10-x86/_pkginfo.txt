@@ -1,1 +1,0 @@
-C:\Users\Arjun\source\repos\App1\App1\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppPackages\App1_1.0.0.0_x86_Debug_Test\App1_1.0.0.0_x86_Debug.msix

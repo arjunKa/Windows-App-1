@@ -57,7 +57,7 @@
         </Grid.Resources>
         <GridView x:Name="ImageGridView"
                 ItemTemplate="{StaticResource ImageGridView_ItemTemplate}"
-                  ItemContainerStyle="{StaticResource ImageGridView_ItemContainerStyle}" Background="White"
+                  ItemContainerStyle="{StaticResource ImageGridView_ItemContainerStyle}" Background="Red"
                   ItemsPanel="{StaticResource ImageGridView_ItemsPanelTemplate}"
                   ContainerContentChanging="ImageGridView_ContainerContentChanging"
                   ItemsSource="{x:Bind Images}">
