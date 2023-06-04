@@ -37,6 +37,8 @@ namespace App1
 
             this.InitializeComponent();
             GetItemsAsync();
+            ExtendsContentIntoTitleBar = true;
+            //SetTitleBar(AppTitleBar);
         }
 
         //       private void myButton_Click(object sender, RoutedEventArgs e)

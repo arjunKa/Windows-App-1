@@ -9,6 +9,7 @@
     mc:Ignorable="d">
 
 
+
     <Grid>
         <Grid.Resources>
             <DataTemplate x:Key="ImageGridView_ItemTemplate" x:DataType="local:ImageFileInfo">
@@ -57,7 +58,7 @@
         </Grid.Resources>
         <GridView x:Name="ImageGridView"
                 ItemTemplate="{StaticResource ImageGridView_ItemTemplate}"
-                  ItemContainerStyle="{StaticResource ImageGridView_ItemContainerStyle}" Background="White"
+                  ItemContainerStyle="{StaticResource ImageGridView_ItemContainerStyle}" Background="Green"
                   ItemsPanel="{StaticResource ImageGridView_ItemsPanelTemplate}"
                   ContainerContentChanging="ImageGridView_ContainerContentChanging"
                   ItemsSource="{x:Bind Images}">
